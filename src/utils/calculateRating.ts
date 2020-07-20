@@ -1,7 +1,5 @@
 import SHA256 from 'crypto-js/sha256';
 
-// get percentage
-
 // Max value when hash is equal to ZZZZZZZZZZ
 const MAX_ASCII_VALUE = 1800;
 

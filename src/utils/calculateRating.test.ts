@@ -4,6 +4,8 @@ import calculateRating, {
   getSum,
 } from './calculateRating';
 
+// TODO: Add scenario for wrong inputs etc.
+
 describe('getHashedName', () => {
   it('returns hash of length 10', () => {
     expect(getHashedName('Alice').length).toBe(10);
