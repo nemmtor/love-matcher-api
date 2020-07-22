@@ -2,9 +2,9 @@
   "root": true,
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
-    "project": "./tsconfig.json"
+    "project": "./ts-extra-config.json"
   },
-  "plugins": ["@typescript-eslint", "no-loops", "prettier"],
+  "plugins": ["@typescript-eslint", "no-loops", "prettier", "jest"],
   "extends": [
     "airbnb-typescript/base",
     "eslint:recommended",

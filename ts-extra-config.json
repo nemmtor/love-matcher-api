@@ -1,0 +1,4 @@
+{
+  "exclude": ["./build"],
+  "extends": "./tsconfig.json"
+}
