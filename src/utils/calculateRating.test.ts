@@ -12,9 +12,9 @@ describe('getHashedName', () => {
   });
 
   it('returns valid hash', () => {
-    expect(getHashedName('Bob')).toBe('52579f5dd4');
+    expect(getHashedName('Bob')).toBe('81b637d8fc');
 
-    expect(getHashedName('Alice')).toBe('e7dcee3cc6');
+    expect(getHashedName('Alice')).toBe('2bd806c97f');
   });
 
   it('returns same hash for different cases', () => {
@@ -65,7 +65,7 @@ describe('getSum', () => {
 
 describe('calculateRating', () => {
   it('returns valid percentage', () => {
-    expect(calculateRating('Bob', 'Alice')).toBe(0.85);
+    expect(calculateRating('Bob', 'Alice')).toBe(0.2);
   });
 
   it('returns same percentage for different cases', () => {
