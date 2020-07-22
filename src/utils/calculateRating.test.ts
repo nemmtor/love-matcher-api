@@ -65,7 +65,7 @@ describe('getSum', () => {
 
 describe('calculateRating', () => {
   it('returns valid percentage', () => {
-    expect(calculateRating('Bob', 'Alice')).toBe(0.2);
+    expect(calculateRating('Bob', 'Alice')).toBe(0.49);
   });
 
   it('returns same percentage for different cases', () => {

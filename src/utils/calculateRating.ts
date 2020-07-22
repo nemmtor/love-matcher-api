@@ -49,19 +49,17 @@ const calculateRating = (name1: string, name2: string): number => {
   // Use getSum twice, first to sum subarrays and then to sum whole array
   // Substract MIN_ASCII_VALUE so we can get low values
   // See top of this file for explanation
-  const sumOfAscii = getSum(
-    asciiCodes.map((arr) => getSum(arr) - MIN_ASCII_VALUE),
-  );
+  // Multiple by 3 so the scores are not so low
+  const sumOfAscii =
+    3 * getSum(asciiCodes.map((arr) => getSum(arr) - MIN_ASCII_VALUE));
 
-  const sumWithExtraPoints = sumOfAscii + getExtraPoints(name1, name2);
+  const sumWithExtraPoints =
+    sumOfAscii + getExtraPoints(name1.toLowerCase(), name2.toLowerCase());
 
-  const rating = Number(
-    (sumWithExtraPoints / (MAX_ASCII_VALUE * 2)).toFixed(2),
-  );
+  const rating = sumWithExtraPoints / (MAX_ASCII_VALUE * 2);
 
   if (rating > 1) return 1;
 
-  return rating;
+  return +rating.toFixed(2);
 };
-
 export default calculateRating;
