@@ -21,6 +21,11 @@ app.use(cors());
 app.use(limiter);
 app.use(speedLimiter);
 
+// Add 2s latency to every request
+app.use((req, res, next) => {
+  setTimeout(next, 2000);
+});
+
 // Routes
 app.use('/match', routes.match);
 
