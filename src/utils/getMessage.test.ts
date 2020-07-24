@@ -1,4 +1,5 @@
 import getMessage, { pickIndex } from './getMessage';
+import loveMessages from './loveMessages';
 
 describe('pickIndex', () => {
   it('is defined', () => {
@@ -37,12 +38,9 @@ describe('getMessage', () => {
     expect(typeof getMessage).toBe('function');
   });
   it('returns random message based on rating', () => {
-    const lowRatingMessages = [
-      'Be careful with that',
-      'You better think twice about that',
-      'It just cannot work',
-      'You definetly dont match',
-    ];
-    expect(lowRatingMessages.includes(getMessage(0.2))).toBeTruthy();
+    expect(loveMessages[0].includes(getMessage(0.21))).toBeTruthy();
+    expect(loveMessages[1].includes(getMessage(0.41))).toBeTruthy();
+    expect(loveMessages[2].includes(getMessage(0.71))).toBeTruthy();
+    expect(loveMessages[3].includes(getMessage(0.91))).toBeTruthy();
   });
 });
