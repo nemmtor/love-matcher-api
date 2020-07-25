@@ -3,6 +3,7 @@ import express from 'express';
 import rateLimit from 'express-rate-limit';
 import slowDown from 'express-slow-down';
 
+import latency from './middlewares/latency';
 import routes from './routes';
 
 const speedLimiter = slowDown({
@@ -20,11 +21,7 @@ const app = express();
 app.use(cors());
 app.use(limiter);
 app.use(speedLimiter);
-
-// Add 2s latency to every request
-app.use((req, res, next) => {
-  setTimeout(next, 2000);
-});
+app.use(latency);
 
 // Routes
 app.use('/match', routes.match);
