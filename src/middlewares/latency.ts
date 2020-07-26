@@ -7,5 +7,5 @@ export default function latencyMiddleware(
 ): void {
   setTimeout(() => {
     next();
-  }, 2000);
+  }, 1000);
 }
