@@ -1,3 +1,4 @@
+import bodyParser from 'body-parser';
 import cors from 'cors';
 import express from 'express';
 import rateLimit from 'express-rate-limit';
@@ -19,6 +20,7 @@ const limiter = rateLimit({
 
 const app = express();
 app.use(cors());
+app.use(bodyParser.json());
 app.use(limiter);
 app.use(speedLimiter);
 app.use(latency);
