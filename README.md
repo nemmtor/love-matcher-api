@@ -2,7 +2,7 @@
 
 Api made for Love Matcher app.
 
-Checkout app at [live](https://love-matcher.netlify.app/result?name1=Kacper&name2=Karolina) or check it's [repo](https://github.com/nemmtor/love-matcher)
+Checkout app at [live](https://love-matcher.netlify.app) or check it's [repo](https://github.com/nemmtor/love-matcher)
 
 ## What's the purpose?
 
