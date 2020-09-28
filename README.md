@@ -4,7 +4,8 @@ Api made for love matcher app
 
 ## What's the purpose?
 
-This api has just 1 endpoint - POST @/match
+This api has just 1 endpoint - POST @/match.
+
 It calculates "love rating" on 2 names given in body request, responds with  names, rating and message(msg is based on rating):
 
 Example respond:
