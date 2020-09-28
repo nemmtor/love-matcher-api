@@ -1,6 +1,8 @@
 # Love Matcher API
 
-Api made for [Love matcher app](https://love-matcher.netlify.app/result?name1=Kacper&name2=Karolina)
+Api made for Love Matcher app.
+
+Checkout app at [Live](https://love-matcher.netlify.app/result?name1=Kacper&name2=Karolina) or check it's [Repo](https://github.com/nemmtor/love-matcher)
 
 ## What's the purpose?
 
