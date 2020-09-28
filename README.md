@@ -24,3 +24,9 @@ Respone:
   "message": "Definetly worth to give it a try"
 }
 ```
+
+## Tech stack
+
+- TypeScript
+- Express
+- Jest for testing
