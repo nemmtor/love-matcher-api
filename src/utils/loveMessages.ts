@@ -5,28 +5,28 @@
 
 const loveMessages = [
   [
-    'Be careful with that',
-    'You better think twice about that',
-    'It just cannot work',
-    'You definetly dont match',
+    'Lepiej uważaj',
+    'Dwa razy pomyśl zanim spróbujesz',
+    'To nie zadziała',
+    'Zdecydowanie nie',
   ],
   [
-    "It might work but I can't promise",
-    "You will like each other, but that's it",
-    "It's not really worth it",
-    'There is a chance, but very tiny one',
+    "Jest szansa ale nie obiecuje",
+    "Polubicie się, ale nic poza tym",
+    "To nie jest tego warte",
+    'Jest szansa, ale bardzo mała',
   ],
   [
-    "It's going to be okay",
-    "Well, that's decent",
-    'You gonna have a good fun',
-    'Definetly worth to give it a try',
+    "Będzie dobrze",
+    "Nie wygląda to najgorzej",
+    'Będziecie się dobrze bawić',
+    'Zdecyowanie warto spróbować',
   ],
   [
-    'You will have happy life and lots of kids',
-    'You should get married',
-    'Please dont hesitate',
-    'You are made for each other',
+    'Czeka was szczęśliwe życie i dużo dzieci',
+    'Powinniście się pobrać',
+    'Nie zwlekajcie',
+    'Jesteście stworzeni dla siebie',
   ],
 ];
 
